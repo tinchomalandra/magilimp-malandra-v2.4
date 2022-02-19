@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="public/css/main.css">
+
+    <title>MagiLimp | Productos de limpieza | Inicio</title>
+</head>
+<body class="cuerpo-site">
+    <div>
+        <!-- BARRA NAVEGACIÓN -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MagiLimp Cañás</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                        <div class="ms-auto">
+                            <button type="button" class="btn btn-primary" id="boton-carrito" data-bs-toggle="modal" data-bs-target="#modalCarrito"><i class="bi bi-cart"></i><span id="contadorCarrito">  0</span></button>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+
+        <div id="contenedor-intro" class="container-fluid px-5 py-5 vh-100">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="public/img/productos-tprente.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3 titulo-heroe">MagiLimp Cañás</h1>
+                <p class="lead parrafo-heroe">Una empresa familiar dedicada a la fabricación y distribución de productos de limpieza.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">¡Mirá nuestros productos!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="container-fluid full-height pt-3">
+                <div id="container-productos" class="row pt-2 mt-4 mb-5 bg-white text-dark">
+                            <!-- <div class="producto card col-md-3">
+                            <p class="text-center align-items-center lead pb-2 pt-3 titulo-prod">
+                                Agua lavandina
+                            </p>
+                            <img src="public/img/lavandina.jpg" alt="" class="img-fluid">
+                            <p class="lead pt-2 text-center align-items-center precio">$79</p>
+                            <p class="pt-2 text-center align-items-center">1lt</p>
+                            <p class="pt-2 text-center align-items-center">Código ref: 01</p>
+                            <div class=" text-center align-items-center pb-3">
+                                <button type="button" class="btn btn-primary agregarAlCarrito">Agregar al carrito</button>
+                            </div>
+                            </div> -->
+                </div>
+            </div>
+        
+    </div>
+    
+
+    <!-- MODAL BOOTSTRAP -->
+    <div class="modal fade" id="modalCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body">
+                <div id="carrito-contenedor">
+                    <!-- <p>
+                        Producto:
+                    </p>
+                    <p>
+                        Precio:
+                    </p>
+                    <button type="button" class="btn btn-danger">
+                        <i class="bi bi-trash3-fill"></i>
+                    </button> -->
+                </div>
+                <p class="precioProducto">Total: ARS <span id="precioTotal"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Confirmar compra</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- donde encontrarnos -->
+    <div class="container-fluid text-dark">
+        <h2 class="display-6 fw-bold pb-2 pt-5 text-center align-items-center titulo">
+            Donde estamos
+        </h2>
+        <p class="text-center align-items-center lead mb-5">
+            Visitanos en nuestra fábrica de Villa Cañás. ¡Podés armar tu compra con importantes descuentos!
+        </p>
+        <div>
+            <iframe class="container-fluid text-center align-items-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26460.13203987472!2d-61.61579242659249!3d-34.00495068288679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c7e8ba00494d27%3A0x164006225051768d!2sVilla%20Ca%C3%B1as%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1643076656046!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="container-fluid footer">
+        <p class="text-center align-items-center lead">
+            Hecho por MEMDev - 2021 - Destellos S.R.L.
+        </p>
+    </footer>
+
+
+    <script src="stock.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
