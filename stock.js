@@ -1,7 +1,7 @@
 let stockProductos = 
 [
     {
-        id: 01, 
+        id: 1, 
         nombre: "Lavandina", 
         precio: 79,
         cantidad: "1lt",
@@ -9,7 +9,7 @@ let stockProductos =
         unidades: 1,
 },
     {
-        id: 02, 
+        id: 2, 
         nombre: "Detergente", 
         precio: 79,
         cantidad: "5lts",
@@ -17,7 +17,7 @@ let stockProductos =
         unidades:1,
     },
     {
-        id: 03, 
+        id: 3, 
         nombre: "Pastillas de cloro para piscina", 
         precio: 199,
         cantidad: "x5 (1kg)",
@@ -25,7 +25,7 @@ let stockProductos =
         unidades:1,
     },
     {
-        id: 04, 
+        id: 4, 
         nombre: "Jabón líquido para ropa", 
         precio: 179,
         cantidad: "1lt",
@@ -33,7 +33,7 @@ let stockProductos =
         unidades:1,
     },
     {
-        id: 05, 
+        id: 5, 
         nombre: "Clarificador para piscina", 
         precio: 349,
         cantidad: "1lt",
@@ -41,7 +41,7 @@ let stockProductos =
         unidades:1,
     },
     {
-        id: 06, 
+        id: 6, 
         nombre: "Alguicida para piscina", 
         precio: 349,
         cantidad: "1lt" ,
@@ -49,7 +49,7 @@ let stockProductos =
         unidades:1,
     },
     {
-        id: 07, 
+        id: 7, 
         nombre: "Insecticida", 
         precio: 69,
         cantidad: "1lt" ,
@@ -57,7 +57,7 @@ let stockProductos =
         unidades:1,
     },
     {
-        id: 08, 
+        id: 8, 
         nombre: "Fertilizante", 
         precio: 3499,
         cantidad: "10kg" ,
