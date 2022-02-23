@@ -5,17 +5,6 @@ let carritoDeCompras = []
 const contenedorProductos = document.getElementById('container-productos');
 const contenedorCarrito = document.getElementById('carrito-contenedor');
 
-document.addEventListener("DOMContentLoaded", (e) => {
-  if (localStorage.getItem("carrito")) {
-    carritoDeCompras = JSON.parse(localStorage.getItem("carrito"))
-    actualizarCarrito(carritoDeCompras);
-  }
-})
-
-document.addEventListener("DOMContentLoaded", (e) => {
-  mostrarProductos(PRODUCTS);
-})
-
 const contadorCarrito = document.getElementById('contadorCarrito');
 const precioTotal = document.getElementById('precioTotal');
 
@@ -106,7 +95,5 @@ function agregarAlCarrito(id){
 function actualizarCarrito (){
     contadorCarrito.innerText = carritoDeCompras.reduce((acc,el) => (acc + el.unidades),0)
     precioTotal.innerText = carritoDeCompras.reduce((acc,el)=> acc + (el.precio * el.unidades),0)
-
-    localStorage.setItem("carrito", JSON.stringify(carritoDeCompras))
 
 }
